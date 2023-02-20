@@ -1,0 +1,139 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+}
+
+body{
+    min-height: 100vh;
+    width: 100%;
+    background: linear-gradient(45deg,#ff9ce3,#4ab3ff);
+    overflow: hidden;
+    /* opacity: 0; */
+    transition: opacity 1s ease;
+}
+
+.visible{
+    opacity: 1;
+}
+
+nav{
+    height: 10vh;
+    width: 100%;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+}
+
+.welcome{
+    font-size: 40px;
+    font-weight: bold;
+    cursor: default;
+}
+
+.nav-controls{
+    display: flex;
+}
+
+.nav-options{
+    background: rgba(255,255,255,0.4);
+    padding: 10px;
+    border-radius: 15px;
+    border: 1px solid white;
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+    margin-left: 15px;
+    cursor: pointer;
+}
+
+.card-container{
+    height: 90vh;
+    width: 100%;
+    padding: 0 80px;
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    flex-wrap: wrap;
+    padding-top: 30px;
+}
+
+.card{
+    width: 205px;
+    min-height: 250px;
+    border-radius: 15px;
+    background: rgba(255,255,255,0.4);
+    border: 1px solid white;
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+    padding: 10px;
+}
+
+.card-header{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.heading{
+    font-weight: bold;
+    font-size: 20px;
+    cursor: default;
+}
+
+.edit-note{
+    height: 35px;
+    cursor: pointer;
+}
+
+.edit-note > img{
+    height: 100%;
+    width: 100%;
+}
+
+.delete-note{
+    height: 40px;
+    cursor: pointer;
+}
+
+.delete-note > img{
+    height: 100%;
+    width: 100%;
+}
+
+.card-content{
+    font-size: 14px;
+    margin-top: 10px;
+    width: 100%;
+    height: 180px;
+    border: 1px solid white;
+    padding: 10px;
+    border-radius: 15px;
+    word-break: break-word;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: rgba(255,255,255,0.4);
+    border-radius: 0px 15px 15px 0px;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: rgba(255,255,255,0.4);
+    border-radius: 0px 15px 15px 0px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }
